@@ -24,7 +24,7 @@ function levelup() {
     userSeq = [];
     level++;
     h4.innerText = `Level=${level}`;
-    let randIdx = Math.floor(Math.random() * 4); // Fixed: Changed *3 to *4 to include all buttons
+    let randIdx = Math.floor(Math.random() * 4);
     let randColor = allbtns[randIdx];
     let randBtn = document.querySelector(`.${randColor}`);
     gameSeq.push(randColor);
@@ -57,16 +57,16 @@ function btnPress() {
 let btns = document.querySelectorAll(".btn");
 for (let btn of btns) {
     btn.addEventListener("click", btnPress);
-    // Add touchstart for better mobile responsiveness
+ 
     btn.addEventListener("touchstart", function(e) {
         e.preventDefault(); // Prevent default touch behavior (e.g., scrolling)
-        btnPress.call(this); // Call the same btnPress function
+        btnPress.call(this); 
     });
 }
 
 function reset() {
     started = false;
     level = 0;
-    userSeq = []; // Fixed: Set to empty array, not 0
-    gameSeq = []; // Fixed: Set to empty array, not 0
+    userSeq = []; 
+    gameSeq = []; 
 }
