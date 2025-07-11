@@ -83,6 +83,22 @@ h4 {
     transition: background-color 0.1s ease;
 }
 
+#startBtn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #00ffcc;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #1e1e2f;
+    margin-bottom: 20px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+#startBtn:hover, #startBtn:active {
+    transform: scale(1.05);
+    background-color: #00ccaa;
+}
+
 @media (max-width: 600px) {
     .btn {
         height: 100px;
