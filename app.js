@@ -37,12 +37,12 @@ function checkAns(idx) {
             setTimeout(levelup, 1000);
         }
     } else {
-        h4.innerHTML = `Game over! <b>Your score was ${level}</b> <br> Press Start to restart.`;
-        document.querySelector("body").style.backgroundColor = "red";
-        setTimeout(function() {
-            document.querySelector("body").style.backgroundColor = "white";
-        }, 200);
-        reset();
+            h4.innerHTML=`Game over!  <b>Your score was ${level}</b> <br> press any key to restart.`;
+            document.querySelector("body").style.background="red";
+            setTimeout(function(){
+                document.querySelector("body").style.background="linear-gradient(135deg, #1e1e2f 0%, #2a2a4a 100%)";
+            },300);
+            reset();
     }
 }
 
