@@ -1,4 +1,4 @@
-
+This project is deployed here : https://polite-mochi-49b288.netlify.app/
 # 🎮 Simon Says - Memory Game
 
 This is a web-based version of the classic "Simon Says" game built using **HTML, CSS, and JavaScript**. The game tests your memory by generating a sequence of colors that the player must repeat in the correct order.
